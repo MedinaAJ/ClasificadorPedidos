@@ -1461,7 +1461,7 @@ public class Main extends javax.swing.JFrame {
             Cell c_id_pedido = row.getCell(2);
 
             if (c_id_pedido != null) {
-                if (!c_id_pedido.toString().equals("Número de pedido")) {
+                if (!c_id_pedido.toString().equals("Pedido")) {
                     if (!id_pedidos.contains(c_id_pedido.toString())) {
                         id_pedidos.add(c_id_pedido.toString());
                     }
@@ -1485,7 +1485,7 @@ public class Main extends javax.swing.JFrame {
             Cell c_id_pedido = row.getCell(2);
 
             if (c_id_pedido != null) {
-                if (!c_id_pedido.toString().equals("Número de pedido")) {
+                if (!c_id_pedido.toString().equals("Pedido")) {
                     if (row.getCell(11) != null) {
                         String valor = filas_por_pedido.get(c_id_pedido.toString()).gestorID();
                         row.getCell(11).setCellValue(valor);
